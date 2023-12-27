@@ -1,0 +1,210 @@
+.section {
+  /* Set the height of the parent section */
+  height: 100vh; /* 100% of the viewport height, adjust as needed */
+  display: flex;
+  justify-content: center; /* Optional: Center the content horizontally */
+  align-items: center; /* Optional: Center the content vertically */
+}
+
+.App {
+  background-color: #282c34;
+  text-align: center;
+  display: flex;
+  color: white;
+  position: absolute;
+  left: 0;top: 0;right: 0;bottom: 0;
+}
+.sidemenu{
+  width: 260px;
+  padding: 10px;
+  background-color: black;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.chatbox{
+  flex: 1px;
+  background-color: #343541;
+  position: relative;
+}
+.side-menu-button{
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: left;
+  transition: ease 0.25s all;
+}
+.side-menu-button{
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  transition: ease 0.25s all;
+  font-size: 23px;
+ 
+}
+.header{
+  padding: 12px;
+ 
+  text-align: center;
+  font-size: 30px;
+  transition: ease 0.25s all;
+}
+.side-menu-button:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.side-menu-button span{
+
+  padding-right: 12px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.chat-input-holder{
+padding: 12px;
+position: absolute;
+left: 0;bottom: 0;right: 0;
+
+}
+.chat-input-textarea{
+  background-color: #40414f;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  border-color: none;
+  margin: 12px;
+  font-size: 1.2em;
+  color: white;
+  outline: none;
+  box-shadow: 0 0 8px  0 rgba(0,0,0,0.25);
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.chat-log{
+
+text-align: left;
+
+}
+.chat-message.chatgpt{
+  background-color: #444654;
+
+}
+.chat-message-center{
+  max-width: 640px;
+margin-left: auto;
+margin-right: auto;
+padding: 12px;
+padding-left: 24px;
+padding-right: 24px;
+display: flex;
+}
+.avatar{
+background: white;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+}
+.avatar.chatgpt{
+background: #0dad7f;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+}
+.message{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.chathistory1{
+  padding: 12px;
+  text-align: left;
+  transition: ease 0.25s all;
+  position: absolute;
+  border-radius: 5px;
+  width: 20%;
+  bottom: 611px;
+  background-color: #57585b;
+}
+.chathistory2{
+  padding: 12px;
+  text-align: left;
+  border-radius: 5px;
+  transition: ease 0.25s all;
+  position: absolute;
+  width: 20%;
+  bottom: 558px;
+  background-color: #57585b;
+}
+ 
+.profile{
+  padding: 12px;
+  text-align: left;
+  transition: ease 0.25s all;
+  position: absolute;
+  width: 20%;
+  height: 40px;
+  bottom: 20px;
+  background-color: #202123;
+  display: flex; /* Use flexbox to align content horizontally */
+  align-items: center;
+  border-radius: 5px;
+ 
+}
+.settings{
+  border-radius: 5px;
+  padding: 6px;
+  text-align: left;
+  transition: ease 0.25s all;
+  position: absolute;
+  width: 20%;
+  bottom: 70px;
+  background-color: #202123;
+  display: flex; /* Use flexbox to align content horizontally */
+  align-items: center;
+}
+.profile-pic {
+  width: 5px; /* Adjust the width of the profile picture */
+  height: 5px; /* Adjust the height of the profile picture */
+  border-radius: 50%; /* Make it a circular profile picture */
+  margin-right: 10px; /* Add some space between the picture and text */
+}
+.settings-pic {
+  width: 30px; /* Adjust the width of the profile picture */
+  height: 30px; /* Adjust the height of the profile picture */
+  border-radius: 50%; /* Make it a circular profile picture */
+  margin-right: 10px; /* Add some space between the picture and text */
+}
+.profile:hover {
+  background-color: #57585b; /* Change color on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Add a subtle box shadow on hover */
+   /* Scale up the div on hover */
+}
+.settings:hover {
+  background-color: #57585b; /* Change color on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Add a subtle box shadow on hover */
+   /* Scale up the div on hover */
+}
